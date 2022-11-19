@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const port = 3000;
+// const port = 3000;
 const mongoose = require('mongoose');
 require("dotenv").config();
 
@@ -27,8 +27,8 @@ app.get("/", async (req, res) => {
   res.send("Hello");
 });
 
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
+app.listen(process.env.PORT, () => {
+  console.log(`Example app listening at http://localhost:${process.env.PORT}`);
 })
 
 app.use(allRoutes)
