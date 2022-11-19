@@ -1,1 +1,1 @@
-# BE22-Group-Project2
+# BE22-Grup-Project2-WebService
